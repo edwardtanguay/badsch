@@ -1,9 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Info Site</title>
+  <title>Bad Schandau – Urlaub September 2026</title>
+
+  <!-- SEO & Social Meta Tags (WhatsApp, Open Graph, Twitter) -->
+  <meta name="description" content="Unser Urlaub in Bad Schandau im September 2026: 32-km-Czechlauf, Wanderungen in der Sächsischen Schweiz, Entspannung an der Elbe und Ausflug nach Dresden.">
+  <meta name="keywords" content="Bad Schandau, Sächsische Schweiz, Wanderungen, Elbe, Urlaub 2026, Czechlauf, Caspar David Friedrich, Kuhstall, Königstein">
+  <meta name="author" content="Edward Tanguay">
+
+  <!-- Open Graph / WhatsApp / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="Bad Schandau – Urlaub September 2026">
+  <meta property="og:description" content="Unser Urlaub in Bad Schandau im September 2026: 32-km-Czechlauf, Wanderungen in der Sächsischen Schweiz, Entspannung an der Elbe und Ausflug nach Dresden.">
+  <meta property="og:image" content="images/badsch-preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Bad Schandau an der Elbe mit Elbsandsteingebirge">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bad Schandau – Urlaub September 2026">
+  <meta name="twitter:description" content="Unser Urlaub in Bad Schandau im September 2026: 32-km-Czechlauf, Wanderungen in der Sächsischen Schweiz, Entspannung an der Elbe und Ausflug nach Dresden.">
+  <meta name="twitter:image" content="images/badsch-preview.jpg">
   
   <!-- Early theme initialization to prevent white flash in dark mode -->
   <script>
@@ -28,20 +49,20 @@
   <header class="top-bar">
     <div class="top-bar__container">
       <div class="top-bar__brand">
-        <h1 class="site-title">Info Site</h1>
+        <h1 class="site-title">Bad Schandau</h1>
       </div>
       <div class="top-bar__actions">
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme" title="Switch theme">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Design wechseln" title="Design wechseln">
           <!-- SVG icon injected by JS -->
         </button>
       </div>
     </div>
   </header>
 
-  <!-- Navigation Bar -->
-  <nav class="site-nav" aria-label="Main Navigation">
+  <!-- Navigation Bar: 3 buttons (Notizen | Wanderungen | Stadt) -->
+  <nav class="site-nav" aria-label="Hauptnavigation">
     <div class="site-nav__container">
-      <button class="site-nav__hamburger" type="button" aria-label="Toggle navigation menu" aria-expanded="false" style="display: none;">
+      <button class="site-nav__hamburger" type="button" aria-label="Navigationsmenü öffnen" aria-expanded="false" style="display: none;">
         <svg class="hamburger-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <line x1="3" y1="12" x2="21" y2="12"></line>
           <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -50,83 +71,118 @@
       </button>
       <ul class="site-nav__list">
         <li class="site-nav__item">
-          <a href="#welcome" class="site-nav__link" data-nav-target="welcome">Welcome</a>
+          <a href="#notes" class="site-nav__link active" data-nav-target="notes">Notizen</a>
         </li>
         <li class="site-nav__item">
-          <a href="#notes" class="site-nav__link" data-nav-target="notes">Notes</a>
+          <a href="#hikes" class="site-nav__link" data-nav-target="hikes">Wanderungen</a>
         </li>
         <li class="site-nav__item">
-          <a href="#about" class="site-nav__link" data-nav-target="about">About</a>
+          <a href="#stadt" class="site-nav__link" data-nav-target="stadt">Stadt</a>
         </li>
       </ul>
-
     </div>
   </nav>
 
   <!-- Main Content Views -->
   <main class="container">
-    <!-- Welcome View -->
-    <section id="view-welcome" class="page-view" aria-labelledby="welcome-heading">
+    <!-- 1. Notes View (Default Landing View) -->
+    <section id="view-notes" class="page-view active" aria-labelledby="notes-heading">
       <article class="card">
-        <h2 id="welcome-heading">Welcome</h2>
-        <p>This is a starter template for static HTML, CSS, and JavaScript websites.</p>
-        <p>It provides clean foundational styling, built-in light/dark theme switching, and modular structure without requiring any build steps or frameworks.</p>
-      </article>
-
-      <article class="card">
-        <h3>Core Principles</h3>
-        <p>The architecture emphasizes semantic HTML, responsive CSS with modern custom properties, and progressive enhancement through vanilla JavaScript.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </article>
-
-      <article class="card">
-        <h3>Design & Layout Details</h3>
-        <p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris.</p>
-        <p>Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam.</p>
-        <p>Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat.</p>
-      </article>
-
-      <article class="card">
-        <h3>Testing Vertical Scroll</h3>
-        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.</p>
-        <p>Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.</p>
-      </article>
-    </section>
-
-    <!-- Notes View -->
-    <section id="view-notes" class="page-view" aria-labelledby="notes-heading">
-      <article class="card">
-        <h2 id="notes-heading">Notes</h2>
+        <h2 id="notes-heading">Notizen</h2>
         <div id="notes-container" class="notes-container" aria-live="polite">
           <!-- Populated dynamically by js/main.js from js/data-parsed/notes.js -->
         </div>
       </article>
     </section>
 
-    <!-- About View -->
-
-    <section id="view-about" class="page-view" aria-labelledby="about-heading">
+    <!-- 2. Wanderungen View -->
+    <section id="view-hikes" class="page-view" aria-labelledby="hikes-heading">
       <article class="card">
-        <h2 id="about-heading">About</h2>
-        <p>Learn more about this site template and its features.</p>
+        <h2 id="hikes-heading">Wanderungen & Touren</h2>
+        <p>Bad Schandau ist das Herzstück des Nationalparks Sächsische Schweiz. Umgeben von bizarren Sandsteinfelsen, tiefen Schluchten und malerischen Tafelbergen bieten sich spektakuläre Wanderrouten direkt vor der Haustür.</p>
       </article>
 
       <article class="card">
-        <h3>Technology Stack</h3>
-        <ul style="margin-top: 0.75rem; padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem;">
-          <li><strong>HTML5</strong> for clean semantic markup.</li>
-          <li><strong>Modern CSS</strong> featuring custom properties, flexbox, grid, and dark mode theming.</li>
-          <li><strong>Vanilla JavaScript</strong> for fast, dependency-free interactive logic.</li>
-          <li><strong>FTP Deploy</strong> for simply publishing to HTML web server.</li>
+        <span class="badge">Tag 1 • Sonntag 30</span>
+        <h3>Caspar-David-Friedrich-Weg</h3>
+        <p>Ein herrlicher Rundwanderweg auf den Spuren des berühmten Malers der Romantik. Die Tour führt von Krippen hinauf zu Aussichtspunkten mit fantastischem Blick auf das Elbtal und die Schrammsteine.</p>
+        <ul class="info-list">
+          <li><strong>Start/Ziel:</strong> Krippen (Fähre F5 ab Bad Schandau, 2,00&nbsp;€)</li>
+          <li><strong>Highlights:</strong> Historische Motive Caspar David Friedrichs, Mittelhangweg, Panoramablicke über die Elbe</li>
         </ul>
       </article>
 
       <article class="card">
-        <h3>See also</h3>
-        <div id="see-also-container" class="link-list" aria-live="polite">
-          <!-- Populated dynamically by js/main.js from js/data-parsed/see-also-links.js -->
+        <span class="badge">Tag 2 • Montag 31</span>
+        <h3>Festung Königstein & Elbtal</h3>
+        <p>Eine der größten Bergfestungen Europas, thronend auf dem gleichnamigen Tafelberg 240 Meter über der Elbe. Beeindruckende Wehrmauern, historische Kasematten und 360-Grad-Rundumblick.</p>
+        <ul class="info-list">
+          <li><strong>Distanz / Profil:</strong> ca. 12–15&nbsp;km Rundweg ab Königstein / Bad Schandau</li>
+          <li><strong>Sehenswert:</strong> Brunnenhaus (152,5 m tiefer Brunnen), Festungsplateau und Malerweg-Abschnitte</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <span class="badge">Tag 3 • Dienstag 1</span>
+        <h3>Kuhstall & Neuer Wildenstein (20 km)</h3>
+        <p>Eine klassische Tagestour ins wildromantische Kirnitzschtal. Der „Kuhstall“ ist ein monumentales natürliches Felsentor auf dem Neuen Wildenstein mit der abenteuerlichen Himmelsleiter zum Felsplateau.</p>
+        <ul class="info-list">
+          <li><strong>Distanz:</strong> ca. 20&nbsp;km Rundwanderung</li>
+          <li><strong>Erreichbarkeit:</strong> Direkt zu Fuß oder mit der historischen Kirnitzschtalbahn bis zum Lichtenhainer Wasserfall</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Weitere Touren & GPS-Tracks</h3>
+        <p>Detaillierte Wanderkarten und Höhenprofile auf Komoot:</p>
+        <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.75rem;">
+          <a href="https://www.komoot.com/de-de/guide/2051/wandern-rund-um-bad-schandau" target="_blank" rel="noopener noreferrer" class="external-button">
+            <span>Komoot: Wander-Guide Bad Schandau</span>
+          </a>
+          <a href="https://www.komoot.com/discover/Bad_Schandau/@50.9247388,14.2153046/tours?sport=hike&map=true&max_distance=9000&pageNumber=1" target="_blank" rel="noopener noreferrer" class="external-button">
+            <span>Komoot: Entdecke Wandertouren</span>
+          </a>
         </div>
+      </article>
+    </section>
+
+    <!-- 3. Stadt View -->
+    <section id="view-stadt" class="page-view" aria-labelledby="stadt-heading">
+      <article class="card">
+        <h2 id="stadt-heading">Stadt Bad Schandau</h2>
+        <p>Bad Schandau ist die älteste Kur- und Bäderstadt der Sächsischen Schweiz. Gelegen direkt an der Elbe verbindet sie historischen Charme, Kneipp-Tradition und moderne Wellness mit unmittelbarer Nähe zu den Felsen des Nationalparks.</p>
+        <img src="images/badsch-preview.jpg" alt="Panorama von Bad Schandau an der Elbe" class="card-media">
+      </article>
+
+      <article class="card">
+        <span class="badge">Wahrzeichen</span>
+        <h3>Historischer Personenaufzug nach Ostrau</h3>
+        <p>Der 1904 erbaute, 50 Meter hohe freistehende Stahlturm im Jugendstil verbindet Bad Schandau mit dem höher gelegenen Ortsteil Ostrau. Oben angekommen genießt man einen weiten Panoramablick über das Elbtal und findet ein Luchsgehege.</p>
+        <img src="images/personenaufzug.jpg" alt="Historischer Personenaufzug Bad Schandau" class="card-media">
+      </article>
+
+      <article class="card">
+        <span class="badge">Erlebnisbahn</span>
+        <h3>Kirnitzschtalbahn</h3>
+        <p>Seit 1898 fährt die traditionelle gelbe Überlandstraßenbahn auf 8 Kilometern entlang der schäumenden Kirnitzsch vom Bad Schandauer Kurpark bis zum Lichtenhainer Wasserfall – idealer Einstiegspunkt für zahlreiche Felsenwanderungen.</p>
+        <img src="images/kirnitzschtalbahn.jpg" alt="Kirnitzschtalbahn im Nationalpark" class="card-media">
+      </article>
+
+      <article class="card">
+        <span class="badge">Auf dem Wasser</span>
+        <h3>Elbschifffahrt & Fähren</h3>
+        <p>Erkunde das Elbtal vom Wasser aus: Mit den Raddampfern der traditionsreichen Sächsischen Dampfschifffahrt oder den praktischen Fährverbindungen (z.B. Fähre F5) zwischen den Ortsteilen und Bahnhöfen.</p>
+        <img src="images/dampfschiff.jpg" alt="Sächsische Dampfschifffahrt auf der Elbe" class="card-media">
+      </article>
+
+      <article class="card">
+        <span class="badge">Erholung & Kultur</span>
+        <h3>Toskana Therme & Nationalparkzentrum</h3>
+        <ul class="info-list">
+          <li><strong>Toskana Therme:</strong> Entspannung mit dem einzigartigen <em>Liquid Sound</em> Konzept (Musik und Licht unter Wasser) sowie großzügiger Saunalandschaft.</li>
+          <li><strong>Nationalparkzentrum:</strong> Interaktive Ausstellungen zur Entstehung des Elbsandsteingebirges, Flora und Fauna der Region.</li>
+          <li><strong>Marktplatz & St. Johanniskirche:</strong> Historischer Stadtkern mit spätgotischer Kirche, Renaissance-Altar und gemütlichen Cafés.</li>
+        </ul>
       </article>
     </section>
   </main>
@@ -134,7 +190,7 @@
   <!-- Fixed Bottom Footer -->
   <footer class="bottom-bar">
     <span class="bottom-bar__link">
-      See more projects by <a href="https://tanguay.info" target="_blank" rel="noopener noreferrer">Edward</a>
+      Weitere Projekte von <a href="https://tanguay.info" target="_blank" rel="noopener noreferrer">Edward</a>
     </span>
   </footer>
 </body>

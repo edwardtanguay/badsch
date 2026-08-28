@@ -1,26 +1,30 @@
-- this is a test
-	- here are some links:
-		- https://www.marathondesgrandscrus.com
-		- [Marathon des grands crus 17/10/2021 à Dijon](https://www.youtube.com/watch?v=qQCA4KLtdog)
-		- course à pied
-			- https://www.openrunner.com/route-details/23448723
+- Plan
+	- Sonntag 30
+		- 07:37 Berlin Südkreuz
+		- 09:35 Bad Schandau
+			- Fähre F5, alle 30 Minuten, 2,00 €
+		- WANDERUNG: Casper-David-Friedrich-Weg
+	- Montag 31
+		- Wetter: eher Regen
+		- 05:00 32K Czechlauf
+		- WANDERUNG: Königsstein
+	- Dienstag 1
+		- WANDERUNG: Kuhstall (20km)
+	- Mittwoch 2
+		- 11:44 Bad Schandau
+		- 12:28 Dresden ankommen
+		- 16:33 Dresden losfahren
+		- 18:20 Südkreuz
+- Wanderungen
+	- https://www.komoot.com/discover/Bad_Schandau/@50.9247388,14.2153046/tours?sport=hike&map=true&max_distance=9000&pageNumber=1
+	- https://www.komoot.com/de-de/guide/2051/wandern-rund-um-bad-schandau
+- Czech run
+- Dresden itinerary
 - Bad Schandau
-	- perhaps they have Airbnbs there? :thinking:
-	- basic info: https://de.wikipedia.org/wiki/Bad_Schandau
-	- looks like a nice little town##badsch
-- Icon Examples
-	- stareyes :stareyes: and text after it
-	- smile :smile:
-	- ohmygod :ohmygod:
-	- whatever :whatever:
-	- shootingstar :shootingstar:
-	- muscle :muscle:
-	- thumbsup :thumbsup:
-	- twohearts :twohearts:
-	- redheart :redheart:
-	- water :water:
-	- twinkle :twinkle:
-	- laugh :laugh:
-	- check :check:
-	- ohno :ohno:
-	- party :party:
+- mögliche Orte
+	- Königsstein
+	- Kuhstall
+- mögliche Aktivitäten
+	- Boot
+- Busse
+	- https://grok.com/c/05cf54de-5b0b-412b-8629-cf1dade3df1d?rid=5fb41d2d-83dd-4445-bd42-50765114093f

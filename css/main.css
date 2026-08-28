@@ -507,3 +507,59 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
+/* Page Card Content & Media Enhancements */
+.card-media {
+  width: 100%;
+  height: auto;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin: 0.85rem 0 1rem;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.2rem 0.55rem;
+  border-radius: 9999px;
+  background-color: var(--surface-hover);
+  border: 1px solid var(--border-color);
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.info-list {
+  margin-top: 0.75rem;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.info-list li {
+  line-height: 1.5;
+}
+
+.external-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.85rem;
+  padding: 0.45rem 0.9rem;
+  background-color: var(--primary-color);
+  color: #ffffff !important;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+
+.external-button:hover {
+  opacity: 0.9;
+}
+
+
