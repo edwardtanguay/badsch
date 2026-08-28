@@ -1,0 +1,26 @@
+- this is a test
+	- here are some links:
+		- https://www.marathondesgrandscrus.com
+		- [Marathon des grands crus 17/10/2021 à Dijon](https://www.youtube.com/watch?v=qQCA4KLtdog)
+		- course à pied
+			- https://www.openrunner.com/route-details/23448723
+- Bad Schandau
+	- perhaps they have Airbnbs there? :thinking:
+	- basic info: https://de.wikipedia.org/wiki/Bad_Schandau
+	- looks like a nice little town##badsch
+- Icon Examples
+	- stareyes :stareyes: and text after it
+	- smile :smile:
+	- ohmygod :ohmygod:
+	- whatever :whatever:
+	- shootingstar :shootingstar:
+	- muscle :muscle:
+	- thumbsup :thumbsup:
+	- twohearts :twohearts:
+	- redheart :redheart:
+	- water :water:
+	- twinkle :twinkle:
+	- laugh :laugh:
+	- check :check:
+	- ohno :ohno:
+	- party :party:
