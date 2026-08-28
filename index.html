@@ -47,9 +47,9 @@
   </script>
 
   <!-- Cache-busted stylesheets & scripts -->
-  <link rel="stylesheet" href="css/reset.css?v=20260828180504">
-  <link rel="stylesheet" href="css/main.css?v=20260828180504">
-  <script type="module" src="js/main.js?v=20260828180504"></script>
+  <link rel="stylesheet" href="css/reset.css?v=20260828230332">
+  <link rel="stylesheet" href="css/main.css?v=20260828230332">
+  <script type="module" src="js/main.js?v=20260828230332"></script>
 </head>
 <body>
   <!-- Top Bar -->
@@ -104,53 +104,9 @@
 
     <!-- 2. Wanderungen View -->
     <section id="view-hikes" class="page-view" aria-labelledby="hikes-heading">
-      <article class="card">
-        <h2 id="hikes-heading">Wanderungen & Touren</h2>
-        <p>Bad Schandau ist das Herzstück des Nationalparks Sächsische Schweiz. Umgeben von bizarren Sandsteinfelsen, tiefen Schluchten und malerischen Tafelbergen bieten sich spektakuläre Wanderrouten direkt vor der Haustür.</p>
-      </article>
-
-      <article class="card">
-        <span class="badge">Tag 1 • Sonntag 30</span>
-        <h3>Caspar-David-Friedrich-Weg</h3>
-        <p>Ein herrlicher Rundwanderweg auf den Spuren des berühmten Malers der Romantik. Die Tour führt von Krippen hinauf zu Aussichtspunkten mit fantastischem Blick auf das Elbtal und die Schrammsteine.</p>
-        <ul class="info-list">
-          <li><strong>Start/Ziel:</strong> Krippen (Fähre F5 ab Bad Schandau, 2,00&nbsp;€)</li>
-          <li><strong>Highlights:</strong> Historische Motive Caspar David Friedrichs, Mittelhangweg, Panoramablicke über die Elbe</li>
-        </ul>
-      </article>
-
-      <article class="card">
-        <span class="badge">Tag 2 • Montag 31</span>
-        <h3>Festung Königstein & Elbtal</h3>
-        <p>Eine der größten Bergfestungen Europas, thronend auf dem gleichnamigen Tafelberg 240 Meter über der Elbe. Beeindruckende Wehrmauern, historische Kasematten und 360-Grad-Rundumblick.</p>
-        <ul class="info-list">
-          <li><strong>Distanz / Profil:</strong> ca. 12–15&nbsp;km Rundweg ab Königstein / Bad Schandau</li>
-          <li><strong>Sehenswert:</strong> Brunnenhaus (152,5 m tiefer Brunnen), Festungsplateau und Malerweg-Abschnitte</li>
-        </ul>
-      </article>
-
-      <article class="card">
-        <span class="badge">Tag 3 • Dienstag 1</span>
-        <h3>Kuhstall & Neuer Wildenstein (20 km)</h3>
-        <p>Eine klassische Tagestour ins wildromantische Kirnitzschtal. Der „Kuhstall“ ist ein monumentales natürliches Felsentor auf dem Neuen Wildenstein mit der abenteuerlichen Himmelsleiter zum Felsplateau.</p>
-        <ul class="info-list">
-          <li><strong>Distanz:</strong> ca. 20&nbsp;km Rundwanderung</li>
-          <li><strong>Erreichbarkeit:</strong> Direkt zu Fuß oder mit der historischen Kirnitzschtalbahn bis zum Lichtenhainer Wasserfall</li>
-        </ul>
-      </article>
-
-      <article class="card">
-        <h3>Weitere Touren & GPS-Tracks</h3>
-        <p>Detaillierte Wanderkarten und Höhenprofile auf Komoot:</p>
-        <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.75rem;">
-          <a href="https://www.komoot.com/de-de/guide/2051/wandern-rund-um-bad-schandau" target="_blank" rel="noopener noreferrer" class="external-button">
-            <span>Komoot: Wander-Guide Bad Schandau</span>
-          </a>
-          <a href="https://www.komoot.com/discover/Bad_Schandau/@50.9247388,14.2153046/tours?sport=hike&map=true&max_distance=9000&pageNumber=1" target="_blank" rel="noopener noreferrer" class="external-button">
-            <span>Komoot: Entdecke Wandertouren</span>
-          </a>
-        </div>
-      </article>
+      <div id="hikes-container" class="hikes-container" aria-live="polite">
+        <!-- Populated dynamically by js/main.js from js/data-parsed/hikes.js -->
+      </div>
     </section>
 
     <!-- 3. Stadt View -->

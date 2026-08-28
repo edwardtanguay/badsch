@@ -562,4 +562,41 @@ body {
   opacity: 0.9;
 }
 
+/* Dynamic Hike Card Styling */
+.hike-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.hike-title {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  color: var(--text-color);
+}
+
+.hike-image-wrap {
+  margin: 0.5rem 0 1rem 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  background-color: var(--surface-hover);
+}
+
+.hike-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 1px);
+}
+
+.hike-description {
+  margin: 0;
+  line-height: 1.65;
+  color: var(--text-color);
+}
+
+
 

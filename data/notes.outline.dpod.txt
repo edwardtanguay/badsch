@@ -1,3 +1,5 @@
+- Google Earth App
+	- [KMZ Datei](https://tanguay.info/badsch/download/badsch001.kmz)
 - Plan
 	- Sonntag 30
 		- 07:37 Berlin Südkreuz
@@ -7,7 +9,6 @@
 	- Montag 31
 		- Wetter: eher Regen
 		- 05:00 32K Czechlauf
-			- .. record run
 		- WANDERUNG: Königsstein
 	- Dienstag 1
 		- WANDERUNG: Kuhstall (20km)

@@ -1,12 +1,15 @@
 import { config } from "./config.js";
 import { notes } from "./data-parsed/notes.js";
+import { hikes } from "./data-parsed/hikes.js";
 
 function initApp() {
   initThemeToggle();
   initNavigation();
   initFooter();
   initNotes();
+  initHikes();
 }
+
 
 
 if (document.readyState === "loading") {
@@ -322,4 +325,54 @@ function initNotes() {
   container.innerHTML = "";
   container.appendChild(listElement);
 }
+
+/* Format & Render Hikes List */
+function initHikes() {
+  const container = document.getElementById("hikes-container");
+  if (!container) return;
+
+  if (!Array.isArray(hikes) || hikes.length === 0) {
+    container.innerHTML = "<article class='card'><p class='text-muted'>Keine Wanderungen gefunden.</p></article>";
+    return;
+  }
+
+  container.innerHTML = "";
+
+  hikes.forEach((hike) => {
+    const card = document.createElement("article");
+    card.className = "card hike-card";
+
+    // Title
+    const titleEl = document.createElement("h3");
+    titleEl.className = "hike-title";
+    titleEl.textContent = hike.title;
+    card.appendChild(titleEl);
+
+    // Image (if present)
+    if (hike.image) {
+      const imageContainer = document.createElement("div");
+      imageContainer.className = "hike-image-wrap";
+
+      const img = document.createElement("img");
+      img.src = `images/hikes/${hike.image}`;
+      img.alt = hike.title || hike.id;
+      img.className = "hike-image";
+      img.loading = "lazy";
+      imageContainer.appendChild(img);
+
+      card.appendChild(imageContainer);
+    }
+
+    // Description with formatted content (links, bold, etc.)
+    if (hike.description) {
+      const descEl = document.createElement("p");
+      descEl.className = "hike-description";
+      descEl.innerHTML = renderFormattedContent(hike.description);
+      card.appendChild(descEl);
+    }
+
+    container.appendChild(card);
+  });
+}
+
 
