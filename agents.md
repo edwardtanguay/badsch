@@ -2,6 +2,8 @@
 
 ## Project Overview
 
+The language of this site is German, everything should be translated into German
+
 This repository is a starter template for static websites built with plain HTML, CSS, and JavaScript.
 
 The project must remain simple, modular, and easy to maintain:
