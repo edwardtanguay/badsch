@@ -7,6 +7,7 @@
     "dev": "tsx cmd/dev.ts",
     "pd": "tsx cmd/parse-data.ts",
     "rps": "tsx cmd/reduce-photo-size.ts",
+    "cpdf": "tsx cmd/create-photo-dpod-file.ts",
     "deploy": "npm run pd && tsx cmd/deploy.ts"
   },
   "devDependencies": {
