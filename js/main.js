@@ -1,6 +1,7 @@
 import { config } from "./config.js";
 import { notes } from "./data-parsed/notes.js";
 import { hikes } from "./data-parsed/hikes.js";
+import { retro } from "./data-parsed/retro.js";
 
 function initApp() {
   initThemeToggle();
@@ -8,6 +9,7 @@ function initApp() {
   initFooter();
   initNotes();
   initHikes();
+  initRetro();
 }
 
 
@@ -96,11 +98,13 @@ function initNavigation() {
 
   // Conditional hamburger display: only show hamburger if there are 4 or more nav items
   const navItemsCount = navLinks.length;
-  if (navItemsCount >= 4 && navContainer && hamburgerBtn) {
+  if (navItemsCount >= 4 && navContainer) {
     navContainer.classList.add("has-hamburger");
-    hamburgerBtn.style.display = "inline-flex";
-  } else if (hamburgerBtn) {
-    hamburgerBtn.style.display = "none";
+  } else if (navContainer) {
+    navContainer.classList.remove("has-hamburger");
+  }
+  if (hamburgerBtn) {
+    hamburgerBtn.style.display = "";
   }
 
   if (hamburgerBtn && navList) {
@@ -374,5 +378,43 @@ function initHikes() {
     container.appendChild(card);
   });
 }
+
+/* Format & Render Retro Photo Gallery */
+function initRetro() {
+  const container = document.getElementById("retro-container");
+  const countEl = document.getElementById("retro-count");
+  if (!container) return;
+
+  if (!Array.isArray(retro) || retro.length === 0) {
+    container.innerHTML = "<article class='card'><p class='text-muted'>Keine Fotos gefunden.</p></article>";
+    if (countEl) countEl.textContent = "0 historische Aufnahmen";
+    return;
+  }
+
+  if (countEl) {
+    countEl.textContent = `${retro.length} historische Aufnahmen`;
+  }
+
+  container.innerHTML = "";
+
+  const fragment = document.createDocumentFragment();
+
+  retro.forEach((photoName) => {
+    const itemEl = document.createElement("div");
+    itemEl.className = "retro-item";
+
+    const img = document.createElement("img");
+    img.src = `images/retro/${photoName}`;
+    img.alt = `Historische Aufnahme ${photoName}`;
+    img.className = "retro-img";
+    img.loading = "lazy";
+
+    itemEl.appendChild(img);
+    fragment.appendChild(itemEl);
+  });
+
+  container.appendChild(fragment);
+}
+
 
 
