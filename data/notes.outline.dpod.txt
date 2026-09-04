@@ -1,17 +1,39 @@
 - Google Earth App
-	- [KMZ Datei](https://tanguay.info/badsch/download/badsch001.kmz)
+	- [KMZ Datei](https://tanguay.info/badsch/download/badsch003.kmz)
 - Plan
 	- Sonntag 30
 		- 07:37 Berlin Südkreuz
 		- 09:35 Bad Schandau
 			- Fähre F5, alle 30 Minuten, 2,00 €
-		- WANDERUNG: Casper-David-Friedrich-Weg
+		- **WANDERUNG: Casper-David-Friedrich-Weg (15km)**
+			- STATION 1:##friedstat1
+			- STATION 2: Das Steinbruchmotiverster Pfad von "Zum Mittelhangweg" in die Berge##thefirstup
+			- das Steinbruchmotiv Schild##steingbruhmosign
+			- *"Das sind die sportlichen Abschnitte des Weges am Anfang hinter Krippen und dann bei Schmilka hoch nach Schona, aber es lohnt sich"*##upthestepsss
+			- *"Der MittelhangWeg zwischen Krippen und Hirschgrund ist nichts für Touries mit Kindern und ungeeignetem Schuhwerk! Der Weg ist größtenteils nur Schulterbreit manchmal nur 2 Fuß und gespickt mit möglichen Abrutschstellen den steilen Hang hinunter. Bei Gegenverkehr kann es eng werden, vor allem in der Saison bei vielen Wanderern."*##narropath
+			- Aussichtspunkt Burg Schöna##schona
 	- Montag 31
 		- Wetter: eher Regen
-		- 05:00 32K Czechlauf
-		- WANDERUNG: Königsstein
+		- **WANDERUNG: Elberadweg bis Königsstein und zurück (18km)**
+			- hier beginnt der Elberadweg##getelbrad
+			- Königstein in der Ferne von der Elbe aus gesehen##approchinkoen
+			- Blick auf die Festung Königstein##uptodko
+			- Patrouillenweg##uptoko
 	- Dienstag 1
-		- WANDERUNG: Kuhstall (20km)
+		- 05:00 32K Czechlauf
+		- **WANDERUNG: Kuhstall (4km)**
+			- am einfachsten nimmst du von Bad Schandau, Kurpark##startbahn
+			- die historische Kirnitzschtalbahn##firstbahn
+			- sie ist keine Buslinie, sondern eine Straßenbahn, fährt direkt durch das Kirnitzschtal und braucht etwa 30–35 Minuten. Im Sommerfahrplan fährt sie täglich in der Regel alle 30 Minuten
+			- bis zur Endhaltestelle "Lichtenhainer Wasserfall"##startpunktkuh
+			- Bushaltestelle Lichtenhainer Wasserfall
+			- Wanderungstartpunkt##whertostart
+			- Brücke über den Münzbornbach##brucke
+			- historischer Wegweiser##signto
+			- Märchenhafter Treppenaufstieg##tehsteps
+			- Kuhstall Felsentor##kuhstallFelsentor
+			- Königliche Brücke über die Kirnitzsch##burckover
+			- nimm von hier die Kirnitzschtalbahn zurück nach Bad Schandau##strassback
 	- Mittwoch 2
 		- 11:44 Bad Schandau
 		- 12:28 Dresden ankommen
