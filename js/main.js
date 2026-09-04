@@ -88,32 +88,10 @@ function initThemeToggle() {
   });
 }
 
-/* Page Navigation & Dynamic Hamburger Logic */
+/* Page Navigation */
 function initNavigation() {
-  const navContainer = document.querySelector(".site-nav__container");
-  const hamburgerBtn = document.querySelector(".site-nav__hamburger");
-  const navList = document.querySelector(".site-nav__list");
   const navLinks = document.querySelectorAll("[data-nav-target]");
   const pageViews = document.querySelectorAll(".page-view");
-
-  // Conditional hamburger display: only show hamburger if there are 4 or more nav items
-  const navItemsCount = navLinks.length;
-  if (navItemsCount >= 4 && navContainer) {
-    navContainer.classList.add("has-hamburger");
-  } else if (navContainer) {
-    navContainer.classList.remove("has-hamburger");
-  }
-  if (hamburgerBtn) {
-    hamburgerBtn.style.display = "";
-  }
-
-  if (hamburgerBtn && navList) {
-    hamburgerBtn.addEventListener("click", () => {
-      const isExpanded = hamburgerBtn.getAttribute("aria-expanded") === "true";
-      hamburgerBtn.setAttribute("aria-expanded", !isExpanded);
-      navList.classList.toggle("open");
-    });
-  }
 
   // Fast view switching
   function switchView(targetId) {
@@ -128,12 +106,6 @@ function initNavigation() {
         link.classList.remove("active");
       }
     });
-
-    // Close mobile menu if open
-    if (navList && navList.classList.contains("open")) {
-      navList.classList.remove("open");
-      if (hamburgerBtn) hamburgerBtn.setAttribute("aria-expanded", "false");
-    }
 
     // View visibility
     pageViews.forEach((view) => {
@@ -410,6 +382,15 @@ function initRetro() {
     img.loading = "lazy";
 
     itemEl.appendChild(img);
+    
+    // DevMode: Overlay image filename in Courier font
+    if (config.devMode) {
+      const badge = document.createElement("span");
+      badge.className = "retro-filename-badge";
+      badge.textContent = photoName;
+      itemEl.appendChild(badge);
+    }
+
     fragment.appendChild(itemEl);
   });
 

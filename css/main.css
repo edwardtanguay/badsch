@@ -123,26 +123,9 @@ body {
   position: relative;
 }
 
-.site-nav__hamburger {
-  display: none;
-  background: none;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius);
-  color: var(--text-color);
-  padding: 0.35rem 0.5rem;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0.25rem;
-}
-
-.site-nav__hamburger:hover {
-  background-color: var(--surface-hover);
-}
-
 .site-nav__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   width: 100%;
   list-style: none;
   margin: 0;
@@ -151,23 +134,20 @@ body {
 }
 
 @media (max-width: 600px) {
-  .site-nav__container.has-hamburger {
-    flex-direction: column;
-    align-items: flex-start;
+  .site-nav__container {
+    padding: 0 0.5rem;
   }
 
-  .site-nav__container.has-hamburger .site-nav__hamburger {
-    display: inline-flex;
+  .site-nav__list {
+    gap: 0.25rem;
   }
 
-  .site-nav__container.has-hamburger .site-nav__list {
-    display: none;
-    grid-template-columns: 1fr;
-    margin-top: 0.5rem;
-  }
-
-  .site-nav__container.has-hamburger .site-nav__list.open {
-    display: grid;
+  .site-nav__link {
+    padding: 0.4rem 0.2rem;
+    font-size: 0.8125rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
@@ -629,7 +609,7 @@ body {
 
 @media (max-width: 600px) {
   .retro-gallery-grid {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: 1fr;
     gap: 0.75rem;
   }
 }
@@ -643,6 +623,29 @@ body {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   display: flex;
+}
+
+.retro-filename-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #f8fafc;
+  background-color: rgba(15, 23, 42, 0.78);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  max-width: calc(100% - 16px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: none;
+  z-index: 2;
 }
 
 .retro-item:hover {
