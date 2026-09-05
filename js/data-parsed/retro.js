@@ -35,7 +35,12 @@ export const retro = [
       "badsch_026.jpg",
       "badsch_027.jpg",
       "badsch_028.jpg",
-      "badsch_029.jpg",
+      "badsch_029.jpg"
+    ]
+  },
+  {
+    "title": "Königstein",
+    "images": [
       "badsch_030.jpg",
       "badsch_031.jpg",
       "badsch_032.jpg",
@@ -50,7 +55,12 @@ export const retro = [
       "badsch_041.jpg",
       "badsch_042.jpg",
       "badsch_043.jpg",
-      "badsch_044.jpg",
+      "badsch_044.jpg"
+    ]
+  },
+  {
+    "title": "Kuhstall und Himmelsleiter",
+    "images": [
       "badsch_045.jpg",
       "badsch_046.jpg",
       "badsch_047.jpg",
@@ -70,7 +80,12 @@ export const retro = [
       "badsch_061.jpg",
       "badsch_062.jpg",
       "badsch_063.jpg",
-      "badsch_064.jpg",
+      "badsch_064.jpg"
+    ]
+  },
+  {
+    "title": "Dresden",
+    "images": [
       "badsch_065.jpg",
       "badsch_066.jpg",
       "badsch_067.jpg",
@@ -82,6 +97,7 @@ export const retro = [
       "badsch_073.jpg",
       "badsch_074.jpg",
       "badsch_075.jpg",
+      "badsch_084.jpg",
       "badsch_076.jpg",
       "badsch_077.jpg",
       "badsch_078.jpg",
@@ -89,8 +105,7 @@ export const retro = [
       "badsch_080.jpg",
       "badsch_081.jpg",
       "badsch_082.jpg",
-      "badsch_083.jpg",
-      "badsch_084.jpg"
+      "badsch_083.jpg"
     ]
   }
 ];
