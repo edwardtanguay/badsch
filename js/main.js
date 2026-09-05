@@ -354,44 +354,55 @@ function initHikes() {
 /* Format & Render Retro Photo Gallery */
 function initRetro() {
   const container = document.getElementById("retro-container");
-  const countEl = document.getElementById("retro-count");
   if (!container) return;
 
   if (!Array.isArray(retro) || retro.length === 0) {
     container.innerHTML = "<article class='card'><p class='text-muted'>Keine Fotos gefunden.</p></article>";
-    if (countEl) countEl.textContent = "0 historische Aufnahmen";
     return;
-  }
-
-  if (countEl) {
-    countEl.textContent = `${retro.length} historische Aufnahmen`;
   }
 
   container.innerHTML = "";
 
   const fragment = document.createDocumentFragment();
 
-  retro.forEach((photoName) => {
-    const itemEl = document.createElement("div");
-    itemEl.className = "retro-item";
-
-    const img = document.createElement("img");
-    img.src = `images/retro/${photoName}`;
-    img.alt = `Historische Aufnahme ${photoName}`;
-    img.className = "retro-img";
-    img.loading = "lazy";
-
-    itemEl.appendChild(img);
-    
-    // DevMode: Overlay image filename in Courier font
-    if (config.devMode) {
-      const badge = document.createElement("span");
-      badge.className = "retro-filename-badge";
-      badge.textContent = photoName;
-      itemEl.appendChild(badge);
+  retro.forEach((section) => {
+    // Render section title as h2 heading
+    if (section.title) {
+      const headingEl = document.createElement("h2");
+      headingEl.className = "retro-section-heading";
+      headingEl.textContent = section.title;
+      fragment.appendChild(headingEl);
     }
 
-    fragment.appendChild(itemEl);
+    if (Array.isArray(section.images) && section.images.length > 0) {
+      const gridEl = document.createElement("div");
+      gridEl.className = "retro-gallery-grid";
+
+      section.images.forEach((photoName) => {
+        const itemEl = document.createElement("div");
+        itemEl.className = "retro-item";
+
+        const img = document.createElement("img");
+        img.src = `images/retro/${photoName}`;
+        img.alt = `Historische Aufnahme ${photoName}`;
+        img.className = "retro-img";
+        img.loading = "lazy";
+
+        itemEl.appendChild(img);
+
+        // DevMode: Overlay image filename in Courier font
+        if (config.devMode) {
+          const badge = document.createElement("span");
+          badge.className = "retro-filename-badge";
+          badge.textContent = photoName;
+          itemEl.appendChild(badge);
+        }
+
+        gridEl.appendChild(itemEl);
+      });
+
+      fragment.appendChild(gridEl);
+    }
   });
 
   container.appendChild(fragment);

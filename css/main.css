@@ -599,6 +599,19 @@ body {
   color: var(--text-color);
 }
 
+/* Retro Section Heading */
+.retro-section-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.retro-section-heading:first-child {
+  margin-top: 0.25rem;
+}
+
 /* Retro Gallery Grid Styling */
 .retro-gallery-grid {
   display: grid;
